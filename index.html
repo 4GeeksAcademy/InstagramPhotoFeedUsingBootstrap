@@ -27,8 +27,39 @@
               
             </ul>
             <div class="d-flex" role="new-post">
-              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <button class="btn btn-success" type="submit">Create a new post</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                      </div>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-camera"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-location-dot"></i></button>
+
+                      
+                      
+
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              
 
               <div class="dropdown ms-2">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,7 +103,7 @@
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
         
-        <div>
+        <div class="container text-center">
           This is the default content
         <div class="row">
           <div class="col-4"><img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/6971/4geeks-icon-black.png" class="" alt="..."></div>
@@ -100,6 +131,11 @@
         <div class="d-flex flex-column align-items-center">
           This is the alternative content
           <div class="card" style="width: 18rem;">
+            <div class="card-header d-flex justify-content-between">
+             <div> My crazy dog spark!</div>
+             <div>08/26</div>
+            </div>
+          
             <img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/6971/4geeks-icon-black.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
